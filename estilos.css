@@ -1,0 +1,281 @@
+body{
+ /* Fondo gradiente. Codigo generado por un sitio web de internet */	
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0f9ff+0,cbebff+47,a1dbff+100;Blue+3D+%2313 */
+background: #f0f9ff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+/****************/
+/*LOGO DEL CBIT*/
+/****************/
+.logo_cbit{
+    cursor: pointer;
+    position: absolute;
+    top:420px;
+    left: 380px;
+    background-image:url('../imagenes/png/logo_cbit.png');
+    background-repeat: no-repeat;
+    width: 192px;
+    height: 161px;
+    z-index: 20;    
+}
+/****************/
+/*NUBE ANIMADA 1*/
+/****************/
+.nube_animada_1{
+    position: absolute;
+    top:220px;
+    left: 380px;
+    background-image:url('../imagenes/png/nube1.png');
+    background-repeat: no-repeat;
+    width: 217px;
+    height: 93px;
+    z-index: 5;
+    /* Animacion de la nube con css*/
+    animation-name:animar_nube_1;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+@keyframes animar_nube_1{
+    0%{left: 180px;}
+    100%{left: 600px;}
+}
+/****************/
+/*NUBE ANIMADA 1*/
+/****************/
+.nube_animada_2{
+    position: absolute;
+    top:100px;
+    left: 380px;
+    background-image:url('../imagenes/png/nube2.png');
+    background-repeat: no-repeat;
+    width: 241px;
+    height: 103px;
+    z-index: 5;
+    /* Animacion de la nube con css*/
+    animation-name:animar_nube_2;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+}
+@keyframes animar_nube_2{
+    0%{left: 190px;}
+    100%{left: 580px;}
+}
+/*======================================*/
+/*Boton para cerrar los contenidos*/
+/*======================================*/
+#Cerrar_contenidos{
+    position: absolute;
+    top:115px;
+    left: 700px;
+    color:#000000;
+    z-index: 20;
+    cursor: pointer;
+    display: none;
+}
+/*CONTENEDOR PRINCIPAL DE LA PAGINA WEB*/
+.contenedor{
+    background-image:url('../imagenes/png/fondo.png');
+    background-repeat: no-repeat;
+    width: 834px;
+    height: 598px;
+/*====================================*/
+/* Codigo para Centrar cualquier caja*/
+/*===================================*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+}
+/*==========================*/
+/*Titulo de la actividad*/
+/*==========================*/
+.titulo{
+    background-image: url('../imagenes/png/titulo2.png');
+    width: 830px;
+    height: 80px;
+    position:relative;
+    margin:auto;
+    top: 10px;
+    z-index: 4;
+/*    Propiedades de la animacion*/
+    animation-name:titulo_animado;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    
+}
+/*==========================*/
+/*     Animar el titulo     */
+/*==========================*/
+@keyframes titulo_animado{
+    0%{width: 0; height: 0;}
+    100%{width: 830px; height: 80px;}
+}
+/*==========================*/
+/*   Boton de matematicas   */
+/*==========================*/
+.boton_mate{
+    width: 146px;
+    height: 102px;
+    position: absolute;
+    top:112px;
+    left: 35px;
+    cursor: pointer;
+    z-index: 1;
+    background-image: url('../imagenes/png/mate_1.png');
+    visibility: visible;
+/*  animacion del boton mate */
+    animation-name:boton_mate;
+    animation-duration:2s;
+    animation-iteration-count:1;
+/* Definir la transicion del hover */
+    transition-property: all;
+    transition-duration: 1s;
+}
+/*==============================================*/
+/*Aplicar las Transiciones a los menus (botones)*/
+/*==============================================*/
+.boton_cs_sociales:hover, .boton_cs_naturales:hover, .boton_lenguaje:hover, .boton_mate:hover{
+        transform: scale(1.1);
+}
+/*==============================================*/
+/*=====================*/
+/*Animacion de Botones*/
+/*=====================*/
+@keyframes boton_mate{
+    0%{width: 0; height: 0;}
+    100%{width:146px; height:102px;}
+/*
+    0%{left: -112px;}
+    100%{left: 35px;}
+*/
+
+}
+/*==========================*/
+/*   Boton de Lenguaje   */
+/*==========================*/
+.boton_lenguaje{
+    width: 146px;
+    height: 102px;
+    position: absolute;
+/*    float: left;*/
+    top:226px;
+    left: 35px;
+    cursor: pointer;
+    z-index: 1;
+    background-image: url('../imagenes/png/lenguaje1.png');
+/*  animacion del boton lenguaje */
+    animation-name:boton_mate;
+    animation-duration:2s;
+    animation-iteration-count:1;
+/*    animation-delay: 3s;*/
+/* Definir la transicion del hover */
+    transition-property: all;
+    transition-duration: 1s;    
+}
+/*==========================*/
+/*  Boton de CS Naturales   */
+/*==========================*/
+.boton_cs_naturales{
+    width: 146px;
+    height: 102px;
+    position: absolute;
+/*    float: left;*/
+    top:340px;
+    left:35px;
+    cursor: pointer;
+    z-index: 1;
+    background-image: url('../imagenes/png/naturales1.png');
+/*  animacion del boton */
+    animation-name:boton_mate;
+    animation-duration:2s;
+    animation-iteration-count:1;
+/* Definir la transicion del hover */
+    transition-property: all;
+    transition-duration: 1s;    
+}
+/*==========================*/
+/*  Boton de CS Sociales   */
+/*==========================*/
+.boton_cs_sociales{
+    width: 146px;
+    height: 102px;
+    position: absolute;
+/*    float: left;*/
+    top:454px;
+    left: 35px;
+    cursor: pointer;
+    z-index: 1;
+    background-image: url('../imagenes/png/sociales1.png');
+    /*  animacion del boton lenguaje */
+    animation-name:boton_mate;
+    animation-duration:2s;
+    animation-iteration-count:1;
+/*    animation-delay: 3s;*/
+    /* Definir la transicion del hover */
+    transition-property: all;
+    transition-duration: 1s;
+}
+/*==========================*/
+/*  Fondo de Contenidos     */
+/*==========================*/
+.fondo_contenidos{
+    width: 604px;
+    height: 259px;
+    position: absolute;
+/*    float: center;*/
+    top:100px;
+    left:205px;
+    background-image: url('../imagenes/png/fondo_contenidos.png');
+/*    visibility: visible;*/
+    display: none;
+    z-index: 10;
+}
+/*==========================*/
+/*  Texto de Contenidos     */
+/*==========================*/
+.texto_contenidos_cs{
+    width: 515px;
+    height: 190px;
+    position: absolute;
+/*    float: center;*/
+    top:115px;
+    left: 245px;
+    color:#0094d2;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 4px;
+    display: none;
+    z-index: 11;
+}
+/*==========================*/
+/*         Creditos         */
+/*==========================*/
+.creditos{
+    position:absolute;
+    top:550px;
+    left: 745px;
+    color: white;
+    font-size: medium;
+}
+ul{
+    color:#0094d2;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px;
+    text-shadow: 10 16 
+}
+/*======================================*/
+/*Pseudoclases como selectores de reglas*/
+/*Definir estilos de los enlaces de contenidos*/
+/*======================================*/
+a.contenidos:link{color: #0094d2;text-decoration:none;}
+a.contenidos:hover{color:black;text-transform:uppercase;}
